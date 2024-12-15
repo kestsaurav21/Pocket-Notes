@@ -1,0 +1,81 @@
+
+  .sidebar {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 2rem;
+    line-height: 36px;
+    letter-spacing: 2%;
+  }
+
+  .notes-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .add-btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    background-color: #1d0c8a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  
+
+@media screen and (min-width: 800px) and (max-width: 950px) {
+    .sidebar {
+        width: 30%;
+        height: 100vh;
+        position: relative;
+        padding: 1.5rem;
+      }
+
+      .title{
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 0.6rem;
+        line-height: 26px;
+        letter-spacing: 2%;
+      }
+    
+      .add-btn{
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+      }
+    
+}
+
+@media screen and (min-width: 950px) {
+    .sidebar {
+        width: 30%;
+        height: 100vh;
+  
+      }
+
+    .title{
+        font-weight: 700;
+        font-size: 2rem;
+        margin: 1rem;
+      }
+}
+  
