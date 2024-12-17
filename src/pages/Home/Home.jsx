@@ -30,7 +30,7 @@ const Home = ({ openModal, notes, openNote, id, setNotes, closeNote }) => {
     </div>
   );
 
-  return windowWidth < 750 ? renderForMobile() : renderForDesktop();
+  return windowWidth < 550 ? renderForMobile() : renderForDesktop();
 };
 
 export default Home;
