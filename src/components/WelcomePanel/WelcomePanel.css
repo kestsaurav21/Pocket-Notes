@@ -1,10 +1,9 @@
-.container{
-  display: none;
+.container {
+    display: none;
 }
-
-
-@media screen and (min-width: 650px)  {
-  .container{
+  
+  @media screen and (min-width: 550px) {
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -14,41 +13,44 @@
       background-color: #dae5f5;
       padding: 2rem;
     }
-  .logo{
+    
+    .logo {
       width: 50%;
       height: auto;
       margin-bottom: 2rem;
     }
-    .welcome-title{
-      font-size: 2rem;
+    
+    .welcome-title {
+      font-size: clamp(1.5rem, 2vw, 3rem); 
       font-weight: 700;
       color: #000000;
       margin: 2rem;
-      line-height: 36px;
-      letter-spacing: 2%;
+      line-height: 1.2;
+      letter-spacing: 0.02em; 
     }
-    .info{
-      font-size: 1.2rem;
+    
+    .info {
+      font-size: clamp(1rem, 1.5vw, 1.5rem); 
       font-weight: 400;
       color: #000000;
       margin: 1rem;
-      line-height: 24px;
-      letter-spacing: 2%;
+      line-height: 1.5; 
+      letter-spacing: 0.02em;
       text-align: center;
     }
-
-    .encryption{
-      font-size: 1.2rem;
+  
+    .encryption {
+      font-size: clamp(1rem, 1.5vw, 1.5rem); 
       font-weight: 400;
       color: #000000;
       margin: 1rem;
-      line-height: 24px;
-      letter-spacing: 2%;        
+      line-height: 1.5;
+      letter-spacing: 0.02em;
       position: absolute;
       bottom: 1rem;
       display: flex;
       align-items: center;
       gap: 1rem;
-  }
+    }
   }
   
