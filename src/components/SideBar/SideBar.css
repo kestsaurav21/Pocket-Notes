@@ -41,7 +41,7 @@
 
 
 
-@media screen and (min-width: 850px) and (max-width: 950px) {
+@media screen and (min-width: 650px) and (max-width: 950px) {
   .sidebar {
       width: 30%;
       height: 100vh;
