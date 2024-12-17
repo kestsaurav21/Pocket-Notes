@@ -38,6 +38,14 @@ const NoteSection = ({ notes, setNotes, id, closeNote }) => {
   }, [id]);
 
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault(); 
+      handleAddNote();
+    }
+  };
+
+
   return (
     <div className="note-section">
       <div className="note-header">
@@ -75,6 +83,8 @@ const NoteSection = ({ notes, setNotes, id, closeNote }) => {
           placeholder="Enter your text here..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          onKeyDown={handleKeyDown} 
+
         />
         <button
           className="send-button"
