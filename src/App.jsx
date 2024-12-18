@@ -13,8 +13,15 @@ const App = () => {
   const closeModal = () => setShowModal(false);
 
   const createGroup = (noteName, noteColor) => {
+
     if (!noteName && !noteColor) {
       alert('Please provide a valid group name and color.');
+      return;
+    }
+
+    const isGroupExist = notes.some((note) => note.name.toLowerCase() === noteName.toLowerCase());
+    if (isGroupExist) {
+      alert('A group with this name already exists.');
       return;
     }
 
